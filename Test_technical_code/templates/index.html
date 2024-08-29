@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Generator</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+        h3 {
+            margin-top: 20px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Number Generator</h1>
+    <input type="number" id="numberInput" placeholder="Input Angka" min="0">
+    <button onclick="generate('triangle')">Generate Segitiga</button>
+    <button onclick="generate('odd')">Generate Bilangan Ganjil</button>
+    <button onclick="generate('prime')">Generate Bilangan Prima</button>
+    
+    <h3>Result:</h3>
+    <pre id="result"></pre>
+</body>
+</html>
